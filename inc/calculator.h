@@ -25,5 +25,10 @@ int fahrenheit_celsius(float f);
 int fahrenheit_kelvin(float f);
 int kelvin_celsius(float k);
 int kelvin_fahrenheit(float k);
+float do_cm_m(float input1);
+float do_km_m(float input1);
+float do_miles_km(float input1);
+float do_miles_m(float input1);
+float do_km_miles(float input1);
 
 #endif  /* #define __CALCULATOR_H__ */
