@@ -11,4 +11,4 @@
 #include <stdlib.h>
 #include <stdio_ext.h>
 
-int area_circle(float a)
+int area_circle(float a);
