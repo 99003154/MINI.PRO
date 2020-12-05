@@ -7,16 +7,16 @@
 
 void test_area_circle(void);
 void test_area_square(void);
-void test_area_triangle((void);
+void test_area_triangle(void);
 void test_area_rectangle(void);
 void test_perimeter_square(void);
-void test_perimeter_triangle((void);
+void test_perimeter_triangle(void);
 void test_perimeter_rectangle(void);
 void test_perimeter_circle(void);
-void test_celsius_fahrenheit((void);
+void test_celsius_fahrenheit(void);
 void test_celsius_kelvin(void);
 void test_fahrenheit_celsius(void);
-void test_fahrenheit_kelvin((void);
+void test_fahrenheit_kelvin(void);
 void test_kelvin_celsius(void);
 void test_kelvin_fahrenheit(void);
 
