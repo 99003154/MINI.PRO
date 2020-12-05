@@ -10,10 +10,18 @@ unsigned int calculator = 0;
 /* Operands on which calculation is performed */
 float calculator_a = 0;
 int calculator_b = 0;
+int calculator_h = 0;
+int calculator_c = 0;
+int calculator_l = 0;
+int calculator_w = 0;
 int calculator_a1 = 0;
+float calculator_r = 0;
+float calculator_c1 = 0;
+int calculator_f = 0;
+int calculator_k = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, GREATER, PRIMENUM, PRIMENUM1, EVENODD, EVENODD1, POSNEG, POSNEG1,FACTORIAL, FACTORIAL1, SQUAREAREA, SQUAREPERI, SQUARE, SQUARE1,CUBE, CUBE1, REVERSE, REVERSE1, PALINDROME, PALINDROME1,GCD, LCM, MODULUS, KILOMETERTOMETER, KILOTOCENTIMETER, KILOTOMILLIMETER,SMALLER, EXIT };
+enum operations{ AREA_CIRCLE=1, AREA_SQUARE, AREA_TRIANGLE, AREA_RECTANGLE, PERIMETER_SQUARE,  PERIMETER_TRIANGLE,  PERIMETER_RECTANGLE,  PERIMETER_CIRCLE, CELSIUS_FAHRENHEIT, CELSIUS_KELVIN, FAHRENHEIT_CELSIUS,FAHRENHEIT_KELVIN, KELVIN_CELSIUS, KELVIN_FAHRENHEIT, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -34,19 +42,19 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Greater\n6. Primenum\n7. Primenum1\n8. Evenodd\n9. Evenodd\n10. Posneg\n11. Posneg1\n12. Factorial\n13. Factorial1\n14. Squarearea\n15. Squareperi\n16. Square\n17. Square1\n18. Cube\n19. Cube1\n20. Reverse\n21. Reverse1\n22. Palindrome\n23. Palindrome1\n24. gcd\n25. Lcm\n26. Modulus\n27. Kilometertometer\n28. kilotocentimeter\n29. kilotomillimeter\n30. Smaller\n31.  Exit");
+    printf("\n1. Area_cirlce\n2. Area_square\n3. Area_triangle\n4. Area_rectangle\n5. Perimeter_square\n6. Perimeter_triangle\n7. Perimeter_rectangle\n8. Perimeter_circle\n9. Celsius_fahrenheit\n10. Celsius_kelvin\n11. Fahrenheit_celsius\n12. Fahrenheit_kelvin\n13. Kelvin_celsius\n14. Kelvin_fahrenheit\n15.  Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
-    scanf("%d", &calculator_operation);
+    scanf("%d", &calculator);
 
-    if(EXIT == calculator_operation)
+    if(EXIT == calculator)
     {
         printf("\nThank you. Exiting the Application\n");
         exit(0);
     }
 
-    if(INVALID != valid_operation(calculator_operation))
+    if(INVALID != valid_operation(calculator))
     {
         printf("\n\tEnter your Numbers with space between them\n");
         __fpurge(stdin);
