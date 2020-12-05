@@ -6,9 +6,9 @@ int area_circle(float a)
     return (pi*a*a);
 }
 
-int area_square(int a)
+int area_square(int a1)
 {
-    return a*a;
+    return a1*a1;
 }
 
 
