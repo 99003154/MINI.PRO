@@ -12,15 +12,15 @@
 #include <stdio_ext.h>
 
 int area_circle(float a);
-int area_square(int a);
+int area_square(int a1);
 int area_triangle(int h, int b);
-int area_rectangle(int a, int b);
-int perimeter_square(int a);
-int perimeter_triangle(int a);
+int area_rectangle(int a1, int b);
+int perimeter_square(int a1);
+int perimeter_triangle(int a1, int b, int c);
 int perimeter_rectangle(int l, int w);
 int perimeter_circle(float r);
-int celsius_fahrenheit(float c);
-int celsius_kelvin(float c);
+int celsius_fahrenheit(float c1);
+int celsius_kelvin(float c1);
 int fahrenheit_celsius(float f);
 int fahrenheit_kelvin(float f);
 int kelvin_celsius(float k);
