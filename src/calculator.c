@@ -3,7 +3,7 @@
 int area_circle(float a)
 {
     float pi=3.147;
-    return (pi*a*a)/2;
+    return (pi*a*a);
 }
 
 int area_square(int a)
