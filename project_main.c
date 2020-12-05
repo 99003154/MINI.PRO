@@ -185,7 +185,7 @@ void calculator_menu(void)
             case KELVIN_FAHRENHEIT:
             printf("\n\t area %d =%d\nEnter to continue", 
             calculator_k, 
-            squarearea(calculator_k));
+            kelvin_fahrenheit(calculator_k));
             
             __fpurge(stdin);
             getchar();
