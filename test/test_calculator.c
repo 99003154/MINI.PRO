@@ -35,7 +35,7 @@ int main() {
   CU_add_test(suite, "area_squaret", test_area_square);
   CU_add_test(suite, "area_triangle", test_area_triangle);
   CU_add_test(suite, "area_rectangle", test_area_rectangle);
-  CU_add_test(suite, "perimeter_square", perimeter_square);
+  CU_add_test(suite, "perimeter_square", test_perimeter_square);
   CU_add_test(suite, "perimeter_triangle", test_perimeter_triangle);
   CU_add_test(suite, "perimeter_rectangle", test_perimeter_rectangle);
   CU_add_test(suite, "perimeter_circle", test_perimeter_circle);
