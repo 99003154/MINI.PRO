@@ -63,42 +63,48 @@ int main() {
                             
                             
  /* Write all the test functions */ 
-void test_area_circle(void) {
+void test_area_circle(void) 
+{
   CU_ASSERT(314.15 == area_circle(10));
   
   /* Dummy fail*/
   CU_ASSERT(5000 == area_circle(15));
 }                           
                             
-void test_area_square(void) {
+void test_area_square(void) 
+{
   CU_ASSERT(100 == area_square(10));
   
   /* Dummy fail*/
   CU_ASSERT(2000 == area_square(15));
 }  
                             
- void test_area_triangle(void) {
+ void test_area_triangle(void) 
+{
   CU_ASSERT(100 == area_triangle(10 ,20));
   
   /* Dummy fail*/
   CU_ASSERT(4000 == area_triangle(15, 50));
 }
                             
-  void test_area_rectangle(void) {
+  void test_area_rectangle(void) 
+{
   CU_ASSERT(1000 == area_rectangle(50 ,20));
   
   /* Dummy fail*/
   CU_ASSERT(1500 == area_rectangle(15, 50));
 }                            
                             
-   void test_perimeter_square(void) {
+   void test_perimeter_square(void) 
+{
   CU_ASSERT(200 == perimeter_square(50));
   
   /* Dummy fail*/
   CU_ASSERT(450 == perimeter_square(9));
 }                             
                             
-   void test_perimeter_triangle(void) {
+   void test_perimeter_triangle(void) 
+{
   CU_ASSERT(600 == perimeter_triangle(100, 200, 300));
   
   /* Dummy fail*/
