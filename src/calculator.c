@@ -27,9 +27,9 @@ int perimeter_square(int a)
     return 4*a;
 }
 
-int perimeter_triangle(int a)
+int perimeter_triangle(int a, int b, int c)
 {
-    return 4*a;
+    return a+b+c;
 }
 
 int perimeter_rectangle(int l, int w)
