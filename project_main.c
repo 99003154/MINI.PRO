@@ -58,7 +58,7 @@ void calculator_menu(void)
     {
         printf("\n\tEnter your Numbers with space between them\n");
         __fpurge(stdin);
-        scanf("%f %f %f %d %d", &calculator_a, &calculator_r, &calculator_c1, &calculator_b, &calculator_h, &calculator_c, &calculator_l, &calculator_w, &calculator_a1, &calculator_f, &calculator_k);
+        scanf("%f %f %f %d %d %d %d %d %d %d %d", &calculator_a, &calculator_r, &calculator_c1, &calculator_b, &calculator_h, &calculator_c, &calculator_l, &calculator_w, &calculator_a1, &calculator_f, &calculator_k);
     }
     else
     {
