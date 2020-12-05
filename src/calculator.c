@@ -45,7 +45,7 @@ int perimeter_circle(float r)
 
 int celsius_fahrenheit(float c1)
 {
-    return (((c*9)/5))+32;
+    return (((c1*9)/5))+32;
 }
 
 int celsius_kelvin(float c1)
