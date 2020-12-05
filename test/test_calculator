@@ -9,7 +9,7 @@ void test_area_circle(void);
 void test_area_square(void);
 void test_area_triangle((void);
 void test_area_rectangle(void);
-void test_perimeter_squaree(void);
+void test_perimeter_square(void);
 void test_perimeter_triangle((void);
 void test_perimeter_rectangle(void);
 void test_perimeter_circle(void);
@@ -31,17 +31,33 @@ int main() {
 /* Note: Do not edit END */
   
     /* Add your test functions in this format for testing*/
-  CU_add_test(suite, "add", test_add);
-  CU_add_test(suite, "subtract", test_subtract);
-  CU_add_test(suite, "multiply", test_multiply);
-  CU_add_test(suite, "divide", test_divide);
-  CU_add_test(suite, "greater", test_greater);
-  CU_add_test(suite, "smaller", test_smaller);
-  CU_add_test(suite, "primenum", test_primenum);
-  CU_add_test(suite, "primenum1", test_primenum1);
-  CU_add_test(suite, "evenodd", test_evenodd);
-  CU_add_test(suite, "evenodd1", test_evenodd1);
-  CU_add_test(suite, "posneg", test_posneg);
-  CU_add_test(suite, "posneg1", test_posneg1);
-  CU_add_test(suite, "factorial", test_factorial);
-  CU_add_test(suite, "factorial1", test_factorial1);
+  CU_add_test(suite, "area_circle", test_area_circle);
+  CU_add_test(suite, "area_squaret", test_area_square);
+  CU_add_test(suite, "area_triangle", test_area_triangle);
+  CU_add_test(suite, "area_rectangle", test_area_rectangle);
+  CU_add_test(suite, "perimeter_square", perimeter_square);
+  CU_add_test(suite, "perimeter_triangle", test_perimeter_triangle);
+  CU_add_test(suite, "perimeter_rectangle", test_perimeter_rectangle);
+  CU_add_test(suite, "perimeter_circle", test_perimeter_circle);
+  CU_add_test(suite, "celsius_fahrenheit", test_celsius_fahrenheit);
+  CU_add_test(suite, "celsius_kelvin", test_celsius_kelvin);
+  CU_add_test(suite, "fahrenheit_celsius", test_fahrenheit_celsius);
+  CU_add_test(suite, "fahrenheit_kelvin", test_fahrenheit_kelvin);
+  CU_add_test(suite, "kelvin_celsius", test_kelvin_celsius);
+  CU_add_test(suite, "kelvin_fahrenheit", test_kelvin_fahrenheit);
+  
+  
+  
+  /* Note: Do not edit START*/
+  /* Setup Test Framework to output the result to Screen */
+  CU_basic_set_mode(CU_BRM_VERBOSE);
+  
+  /* run the unit test framework*/
+  CU_basic_run_tests();
+  
+  /* Cleaning the Resources used by Unit test framework */
+  CU_cleanup_registry();
+/* Note: Do not edit END */
+  return 0;
+}
+
