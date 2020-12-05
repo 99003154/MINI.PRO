@@ -48,9 +48,9 @@ int celsius_fahrenheit(float c)
     return (((c*9)/5))+32;
 }
 
-int celsius_kelvin(float c)
+int celsius_kelvin(float c1)
 {
-    return c + 273.15;
+    return c1 + 273.15;
 }
 
 int fahrenheit_celsius(float f)
