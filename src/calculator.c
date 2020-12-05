@@ -73,3 +73,31 @@ int kelvin_fahrenheit(float k)
 {
     return (k-273.15);
 }
+float do_cm_m(float input1)
+{
+    float result = input1/100;
+    return result;
+}
+
+float do_km_m(floatt input1)
+{
+    float result = input1*1000;
+    return result;
+}
+float do_miles_km(float input1)
+{
+    float result = input1*1.6;
+    return result;
+}
+float do_miles_m(float input1)
+{
+    float result = (input1*1609344)/1000;
+    return result;
+}
+float do_km_miles(float input1)
+{
+    float result = (input1)/1.6;
+    return result;
+}
+
+
