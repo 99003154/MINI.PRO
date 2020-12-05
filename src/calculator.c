@@ -17,19 +17,19 @@ int area_triangle(int h, int b)
     return (h*b)/2;
 }
 
-int area_rectangle(int a, int b)
+int area_rectangle(int a1, int b)
 {
-    return a*b;
+    return a1*b;
 }
 
-int perimeter_square(int a)
+int perimeter_square(int a1)
 {
-    return 4*a;
+    return 4*a1;
 }
 
-int perimeter_triangle(int a, int b, int c)
+int perimeter_triangle(int a1, int b, int c)
 {
-    return a+b+c;
+    return a1+b+c;
 }
 
 int perimeter_rectangle(int l, int w)
