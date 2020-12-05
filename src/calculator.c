@@ -79,7 +79,7 @@ float do_cm_m(float input1)
     return result;
 }
 
-float do_km_m(floatt input1)
+float do_km_m(float input1)
 {
     float result = input1*1000;
     return result;
