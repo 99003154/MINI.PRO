@@ -4,6 +4,7 @@
 /* Modify these two lines according to the project */
 #include <calculator.h>
 #define PROJECT_NAME    "Calculator"
+void do_km_miles(void input1);
 void test_area_circle(void);
 void test_area_square(void);
 void test_area_triangle(void);
@@ -50,6 +51,7 @@ int main() {
 /* Note: Do not edit END */
   
     /* Add your test functions in this format for testing*/
+  CU_add_test(suite, "km_miles", test_km_miles);
   CU_add_test(suite, "area_circle", test_area_circle);
   CU_add_test(suite, "area_squaret", test_area_square);
   CU_add_test(suite, "area_triangle", test_area_triangle);
@@ -100,6 +102,13 @@ int main() {
                             
                             
  /* Write all the test functions */ 
+void test_km_miles(void) {
+  CU_ASSERT_DOUBLE_EQUAL(10 , km_miles(16),3);
+  
+  /* Dummy fail*/
+  CU_ASSERT_DOUBLE_EQUAL(4 , km_miles(320),3);
+}  
+
 void test_area_circle(void) 
 {
   CU_ASSERT(314.15 == area_circle(10));
