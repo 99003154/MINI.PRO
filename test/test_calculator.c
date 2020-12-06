@@ -4,7 +4,6 @@
 /* Modify these two lines according to the project */
 #include <calculator.h>
 #define PROJECT_NAME    "Calculator"
-
 void test_area_circle(void);
 void test_area_square(void);
 void test_area_triangle(void);
