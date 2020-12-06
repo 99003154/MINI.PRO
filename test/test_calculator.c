@@ -5,6 +5,10 @@
 #include <calculator.h>
 #define PROJECT_NAME    "Calculator"
 void do_km_miles(void input1);
+void do_km_m(void input1);
+void do_miles_km(void input1);
+void do_cm_m(void input1);
+void do_miles_m(void input1);
 void test_area_circle(void);
 void test_area_square(void);
 void test_area_triangle(void);
@@ -52,6 +56,10 @@ int main() {
   
     /* Add your test functions in this format for testing*/
   CU_add_test(suite, "km_miles", test_km_miles);
+  CU_add_test(suite, "miles_km", test_km_miles);
+  CU_add_test(suite, "cm_m", test_km_miles);
+  CU_add_test(suite, "miles_m", test_km_miles);
+  CU_add_test(suite, "km_m", test_km_miles);
   CU_add_test(suite, "area_circle", test_area_circle);
   CU_add_test(suite, "area_squaret", test_area_square);
   CU_add_test(suite, "area_triangle", test_area_triangle);
@@ -103,11 +111,33 @@ int main() {
                             
  /* Write all the test functions */ 
 void test_km_miles(void) {
-  CU_ASSERT_DOUBLE_EQUAL(10 , km_miles(16),3);
+  CU_ASSERT_DOUBLE_EQUAL(10 , km_miles(6),3);
   
   /* Dummy fail*/
   CU_ASSERT_DOUBLE_EQUAL(4 , km_miles(320),3);
+}
+void test_cm_m(void) {
+  CU_ASSERT_DOUBLE_EQUAL(100 , cm_m(1),3);
+  
+  /* Dummy fail*/
+  CU_ASSERT_DOUBLE_EQUAL(4 , cm_m(320),3);
 }  
+void test_miles_km(void) {
+  CU_ASSERT_DOUBLE_EQUAL(10 , mile_km(16),3);
+  
+  /* Dummy fail*/
+  CU_ASSERT_DOUBLE_EQUAL(4 , mile_km(320),3);
+}  
+void test_miles_m(void) {
+  CU_ASSERT_DOUBLE_EQUAL(10 , miles_m(16),3);
+  
+  /* Dummy fail*/
+  CU_ASSERT_DOUBLE_EQUAL(4 , miles_m(320),3);
+  void test_km_m(void) {
+  CU_ASSERT_DOUBLE_EQUAL(10 , km_m(10),3);
+  
+  /* Dummy fail*/
+  CU_ASSERT_DOUBLE_EQUAL(4 , km_m(320),3);
 
 void test_area_circle(void) 
 {
