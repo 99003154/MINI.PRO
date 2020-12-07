@@ -389,9 +389,9 @@ void calculator_menu(void)
             result = do_km_miles(input1);
             printf("%lf",result);
             break;
-    }
+    
             
-        case 34:
+        case 40:
             exit(0);
             break;
         default:
