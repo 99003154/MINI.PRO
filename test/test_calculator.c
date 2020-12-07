@@ -114,31 +114,31 @@ int main() {
   CU_ASSERT_DOUBLE_EQUAL(10 == do_km_miles(6));
   
   /* Dummy fail*/
-  CU_ASSERT_DOUBLE_EQUAL(4 == do_km_miles(320));
-}
-void test_do_cm_m(void) {
-  CU_ASSERT_DOUBLE_EQUAL(100 == do_cm_m(1));
+ // CU_ASSERT_DOUBLE_EQUAL(4 == do_km_miles(320));
+//}
+//void test_do_cm_m(void) {
+ // CU_ASSERT_DOUBLE_EQUAL(100 == do_cm_m(1));
   
   /* Dummy fail*/
-  CU_ASSERT_DOUBLE_EQUAL(4 == do_cm_m(320));
-}  
-void test_do_miles_km(void) {
-  CU_ASSERT_DOUBLE_EQUAL(10 == do_mile_km(16));
+  //CU_ASSERT_DOUBLE_EQUAL(4 == do_cm_m(320));
+//}  
+//void test_do_miles_km(void) {
+ // CU_ASSERT_DOUBLE_EQUAL(10 == do_mile_km(16));
   
   /* Dummy fail*/
-  CU_ASSERT_DOUBLE_EQUAL(4 == do_mile_km(320));
-}  
-void test_do_miles_m(void) {
+  //CU_ASSERT_DOUBLE_EQUAL(4 == do_mile_km(320));
+//}
+/*void test_do_miles_m(void) {
   CU_ASSERT_DOUBLE_EQUAL(10 == do_miles_m(16));
   
   /* Dummy fail*/
-  CU_ASSERT_DOUBLE_EQUAL(4 == do_miles_m(320));
-}
-  void test_do_km_m(void) {
+  /*CU_ASSERT_DOUBLE_EQUAL(4 == do_miles_m(320));
+}*/
+  /*void test_do_km_m(void) {
   CU_ASSERT_DOUBLE_EQUAL(10 == do_km_m(10));
   
   /* Dummy fail*/
-  CU_ASSERT_DOUBLE_EQUAL(4 == do_km_m(320));
+  /*CU_ASSERT_DOUBLE_EQUAL(4 == do_km_m(320));
  }*/
 
 void test_area_circle(void) 
