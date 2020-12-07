@@ -26,11 +26,11 @@ int fahrenheit_celsius(float f);
 int fahrenheit_kelvin(float f);
 int kelvin_celsius(float k);
 int kelvin_fahrenheit(float k);
-float test_do_cm_m(float input1);
+/*float test_do_cm_m(float input1);
 float test_do_km_m(float input1);
 float test_do_miles_km(float input1);
 float test_do_miles_m(float input1);
-float test_do_km_miles(float input1);
+float test_do_km_miles(float input1);*/
 
 int add(int operand1, int operand2);
 int subtract(int operand1, int operand2);
