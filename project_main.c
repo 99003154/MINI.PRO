@@ -27,8 +27,8 @@ int calculator_operand2 = 0;
 int calculator_operand3 = 0;
 
  double calculator_input1 = 0;
- double calculator_result = 0;
- int calculator_choice = 0;
+ //double calculator_result = 0;
+ //int calculator_choice = 0;
 
 /* Valid operations */
 enum operations{ AREA_CIRCLE=1, AREA_SQUARE, AREA_TRIANGLE, AREA_RECTANGLE, PERIMETER_SQUARE,  PERIMETER_TRIANGLE,  PERIMETER_RECTANGLE,  PERIMETER_CIRCLE, CELSIUS_FAHRENHEIT, CELSIUS_KELVIN, FAHRENHEIT_CELSIUS,FAHRENHEIT_KELVIN, KELVIN_CELSIUS, KELVIN_FAHRENHEIT, ADD, SUBTRACT, MULTIPLY, DIVIDE, MODULUS, SQUARE, CUBE, SQUAREROOT, GREATER, LESSER, EQUAL, PRIME, ODD, EVEN, REVERSE, SI, CI, PROFIT, LOSS,  1, 2, 3, 4, 5, EXIT };
@@ -68,7 +68,7 @@ void calculator_menu(void)
     {
         printf("\n\tEnter your Numbers with space between them\n");
         __fpurge(stdin);
-        scanf("%f %f %f %d %d %d %d %d %d %d %d %d %d %d %lf %lf %d", &calculator_a, &calculator_r, &calculator_c1, &calculator_b, &calculator_h, &calculator_c, &calculator_l, &calculator_w, &calculator_a1, &calculator_f, &calculator_k, &calculator_operand1, &calculator_operand2, &calculator_operand3, &calculator_input1, &calculator_result, &calculator_choice);
+        scanf("%f %f %f %d %d %d %d %d %d %d %d %d %d %d %lf", &calculator_a, &calculator_r, &calculator_c1, &calculator_b, &calculator_h, &calculator_c, &calculator_l, &calculator_w, &calculator_a1, &calculator_f, &calculator_k, &calculator_operand1, &calculator_operand2, &calculator_operand3, &calculator_input1);
     }
     else
     {
@@ -340,6 +340,8 @@ void calculator_menu(void)
             break;*/
         case PROFIT:
             printf("\n\t profit = %d\nEnter to continue",
+            calculator_operand1;
+            calculator_operand2;
 
             profit(calculator_operand1, calculator_operand2));
 
@@ -348,7 +350,8 @@ void calculator_menu(void)
             break;
         case LOSS:
             printf("\n\t loss = %d\nEnter to continue",
-
+            calculator_operand1;
+            calculator_operand2;
             loss(calculator_operand1, calculator_operand2));
 
             __fpurge(stdin);
@@ -357,6 +360,7 @@ void calculator_menu(void)
             
         case DO_CM_M:
             printf("\nEnter distance to convert");
+            calculator_input1;
             do_cm_m(input1);
             
             __fpurge(stdin);
@@ -366,7 +370,7 @@ void calculator_menu(void)
         case DO_KM_M:
             printf("\nEnter distance to convert");
             do_km_m(input1);
-            
+            calculator_input1;
             __fpurge(stdin);
             getchar();
             break;
@@ -374,13 +378,14 @@ void calculator_menu(void)
         case DO_MILES_KM:
             printf("\nEnter distance to convert");
             do_miles_km(input1);
+            calculator_input1;
             __fpurge(stdin);
             getchar();
             break;
 
         case DO_MILES_M:
             printf("\nEnter distance to convert");
-            
+            calculator_input1;
             do_miles_m(input1);
             __fpurge(stdin);
             getchar();
@@ -390,6 +395,7 @@ void calculator_menu(void)
             printf("\nEnter distance to convert");
 
             do_km_miles(input1);
+            calculator_input1;
             __fpurge(stdin);
             getchar();
             break;
