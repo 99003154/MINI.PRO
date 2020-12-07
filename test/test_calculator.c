@@ -56,10 +56,10 @@ int main() {
   
     /* Add your test functions in this format for testing*/
   CU_add_test(suite, "do_km_miles", test_do_km_miles);
-  CU_add_test(suite, "do_miles_km", test_do_km_miles);
-  CU_add_test(suite, "do_cm_m", test_do_km_miles);
-  CU_add_test(suite, "do_miles_m", test_do_km_miles);
-  CU_add_test(suite, "do_km_m", test_do_km_miles);
+  CU_add_test(suite, "do_miles_km", test_do_miles_km);
+  CU_add_test(suite, "do_cm_m", test_do_cm_m);
+  CU_add_test(suite, "do_miles_m", test_do_miles_m);
+  CU_add_test(suite, "do_km_m", test_do_km_m);
   CU_add_test(suite, "area_circle", test_area_circle);
   CU_add_test(suite, "area_squaret", test_area_square);
   CU_add_test(suite, "area_triangle", test_area_triangle);
