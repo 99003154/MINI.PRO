@@ -1,4 +1,6 @@
 #include <calculator.h>
+#include<function.h>
+#include<stdio.h>
 
 /* Status of the operation requested */
 #define VALID   (1)
@@ -24,8 +26,12 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 int calculator_operand3 = 0;
 
+ double input1 = 0;
+ double result = 0;
+ int choice = 0;
+
 /* Valid operations */
-enum operations{ AREA_CIRCLE=1, AREA_SQUARE, AREA_TRIANGLE, AREA_RECTANGLE, PERIMETER_SQUARE,  PERIMETER_TRIANGLE,  PERIMETER_RECTANGLE,  PERIMETER_CIRCLE, CELSIUS_FAHRENHEIT, CELSIUS_KELVIN, FAHRENHEIT_CELSIUS,FAHRENHEIT_KELVIN, KELVIN_CELSIUS, KELVIN_FAHRENHEIT, ADD, SUBTRACT, MULTIPLY, DIVIDE, MODULUS, SQUARE, CUBE, SQUAREROOT, GREATER, LESSER, EQUAL, PRIME, ODD, EVEN, REVERSE, SI, CI, PROFIT, LOSS, EXIT };
+enum operations{ AREA_CIRCLE=1, AREA_SQUARE, AREA_TRIANGLE, AREA_RECTANGLE, PERIMETER_SQUARE,  PERIMETER_TRIANGLE,  PERIMETER_RECTANGLE,  PERIMETER_CIRCLE, CELSIUS_FAHRENHEIT, CELSIUS_KELVIN, FAHRENHEIT_CELSIUS,FAHRENHEIT_KELVIN, KELVIN_CELSIUS, KELVIN_FAHRENHEIT, ADD, SUBTRACT, MULTIPLY, DIVIDE, MODULUS, SQUARE, CUBE, SQUAREROOT, GREATER, LESSER, EQUAL, PRIME, ODD, EVEN, REVERSE, SI, CI, PROFIT, LOSS,  1, 2, 3, 4, 5, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -46,7 +52,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Area_cirlce\n2. Area_square\n3. Area_triangle\n4. Area_rectangle\n5. Perimeter_square\n6. Perimeter_triangle\n7. Perimeter_rectangle\n8. Perimeter_circle\n9. Celsius_fahrenheit\n10. Celsius_kelvin\n11. Fahrenheit_celsius\n12. Fahrenheit_kelvin\n13. Kelvin_celsius\n14. Kelvin_fahrenheit\n15. Add\n16. Subtract\n17. Multiply\n18. Divide\n19. Modulus\n20. square\n21. cube\n22. squareroot\n23. greater\n24. lesser\n25. equal\n26. prime\n27. odd\n28. even\n29. reverse\n30. si\n31. ci\n32. profit\n33. loss\n34 Exit");
+    printf("\n1. Area_cirlce\n2. Area_square\n3. Area_triangle\n4. Area_rectangle\n5. Perimeter_square\n6. Perimeter_triangle\n7. Perimeter_rectangle\n8. Perimeter_circle\n9. Celsius_fahrenheit\n10. Celsius_kelvin\n11. Fahrenheit_celsius\n12. Fahrenheit_kelvin\n13. Kelvin_celsius\n14. Kelvin_fahrenheit\n15. Add\n16. Subtract\n17. Multiply\n18. Divide\n19. Modulus\n20. square\n21. cube\n22. squareroot\n23. greater\n24. lesser\n25. equal\n26. prime\n27. odd\n28. even\n29. reverse\n30. si\n31. ci\n32. profit\n33. loss\n34, 1\n35, 2\n36, 3\n37, 4\n38, 5\n39, Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -62,7 +68,7 @@ void calculator_menu(void)
     {
         printf("\n\tEnter your Numbers with space between them\n");
         __fpurge(stdin);
-        scanf("%f %f %f %d %d %d %d %d %d %d %d %d %d %d", &calculator_a, &calculator_r, &calculator_c1, &calculator_b, &calculator_h, &calculator_c, &calculator_l, &calculator_w, &calculator_a1, &calculator_f, &calculator_k, &calculator_operand1, &calculator_operand2, &calculator_operand3);
+        scanf("%f %f %f %d %d %d %d %d %d %d %d %d %d %d %lf %lf %d", &calculator_a, &calculator_r, &calculator_c1, &calculator_b, &calculator_h, &calculator_c, &calculator_l, &calculator_w, &calculator_a1, &calculator_f, &calculator_k, &calculator_operand1, &calculator_operand2, &calculator_operand3, &input1, &result, &choice);
     }
     else
     {
@@ -349,37 +355,6 @@ void calculator_menu(void)
             getchar();
             break;
             
-        case 34:
-            exit(0);
-            break;
-        default:
-            printf("\n\t---It should never come here---\n");
-    }
-}
-
-int valid_operation(int operation)
-{
-    /* Check if the operation is a valid operation */
-    return ((AREA_CIRCLE <= operation) && (EXIT >= operation)) ? VALID: INVALID;
-}
-  
-#include<function.h>
-#include<stdio.h>
-
-int main()
-{
-    double input1,result;
-    int choice;
-    printf("\nPlease select the required operation to be performed \n");
-    printf("1.cm_m\n");
-    printf("2.km_m\n");
-    printf("3.miles_km\n");
-    printf("4.miles_m\n");
-    printf("5.km_miles\n");
-    printf("\nEnter you choice: ");
-    scanf("%d",&choice);
-    switch(choice)
-    {
         case 1:
             printf("\nEnter distance to convert");
             scanf("%lf",&input1);
@@ -415,4 +390,22 @@ int main()
             printf("%lf",result);
             break;
     }
+            
+        case 34:
+            exit(0);
+            break;
+        default:
+            printf("\n\t---It should never come here---\n");
+    }
 }
+
+int valid_operation(int operation)
+{
+    /* Check if the operation is a valid operation */
+    return ((AREA_CIRCLE <= operation) && (EXIT >= operation)) ? VALID: INVALID;
+}
+  
+
+
+
+
