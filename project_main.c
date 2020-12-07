@@ -340,7 +340,7 @@ void calculator_menu(void)
         case PROFIT:
             printf("\n\t profit = %d\nEnter to continue",
             calculator_operand1,
-            calculator_operand2;
+            calculator_operand2,
 
             profit(calculator_operand1, calculator_operand2));
 
@@ -350,7 +350,7 @@ void calculator_menu(void)
         case LOSS:
             printf("\n\t loss = %d\nEnter to continue",
             calculator_operand1,
-            calculator_operand2;
+            calculator_operand2,
             loss(calculator_operand1, calculator_operand2));
 
             __fpurge(stdin);
