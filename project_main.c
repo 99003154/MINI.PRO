@@ -1,5 +1,4 @@
 #include <calculator.h>
-#include<function.h>
 #include<stdio.h>
 
 /* Status of the operation requested */
