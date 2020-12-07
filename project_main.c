@@ -368,7 +368,7 @@ int valid_operation(int operation)
 
 int main()
 {
-    float input1,result;
+    double input1,result;
     int choice;
     printf("\nPlease select the required operation to be performed \n");
     printf("1.cm_m\n");
@@ -382,37 +382,37 @@ int main()
     {
         case 1:
             printf("\nEnter distance to convert");
-            scanf("%f",&input1);
+            scanf("%lf",&input1);
             result = do_cm_m(input1);
-            printf("%f",result);
+            printf("%lf",result);
             break;
 
         case 2:
             printf("\nEnter distance to convert");
-            scanf("%f",&input1);
+            scanf("%lf",&input1);
             result = do_km_m(input1);
-            printf("%f",result);
+            printf("%lf",result);
             break;
 
         case 3:
             printf("\nEnter distance to convert");
-            scanf("%f",&input1);
+            scanf("%lf",&input1);
             result = do_miles_km(input1);
-            printf("%f",result);
+            printf("%lf",result);
             break;
 
         case 4:
             printf("\nEnter distance to convert");
-            scanf("%f",&input1);
+            scanf("%lf",&input1);
             result = do_miles_m(input1);
-            printf("%f",result);
+            printf("%lf",result);
             break;
 
         case 5:
             printf("\nEnter distance to convert");
-            scanf("%f",&input1);
+            scanf("%lf",&input1);
             result = do_km_miles(input1);
-            printf("%f",result);
+            printf("%lf",result);
             break;
     }
 }
