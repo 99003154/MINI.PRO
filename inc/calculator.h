@@ -10,12 +10,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdio_ext.h>
-#include <math.h>
-double test_do_cm_m(double input1);
-double test_do_km_m(double input1);
-double test_do_miles_km(double input1);
-double test_do_miles_m(double input1);
-double test_do_km_miles(double input1);
+//#include <math.h>
 
 int area_circle(float a);
 int area_square(int a1);
