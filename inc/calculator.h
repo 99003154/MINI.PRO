@@ -11,11 +11,11 @@
 #include <stdlib.h>
 #include <stdio_ext.h>
 #include <math.h>
-double do_cm_m(double input1);
-double do_km_m(double input1);
-double do_miles_km(double input1);
-double do_miles_m(double input1);
-double do_km_miles(double input1);
+double test_do_cm_m(double input1);
+double test_do_km_m(double input1);
+double test_do_miles_km(double input1);
+double test_do_miles_m(double input1);
+double test_do_km_miles(double input1);
 
 int area_circle(float a);
 int area_square(int a1);
@@ -31,11 +31,11 @@ int fahrenheit_celsius(float f);
 int fahrenheit_kelvin(float f);
 int kelvin_celsius(float k);
 int kelvin_fahrenheit(float k);
-double do_cm_m(double input1);
-double do_km_m(double input1);
-double do_miles_km(double input1);
-double do_miles_m(double input1);
-double do_km_miles(double input1);
+double test_do_cm_m(double input1);
+double test_do_km_m(double input1);
+double test_do_miles_km(double input1);
+double test_do_miles_m(double input1);
+double test_do_km_miles(double input1);
 
 int add(int operand1, int operand2);
 int subtract(int operand1, int operand2);
