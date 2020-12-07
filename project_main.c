@@ -357,37 +357,41 @@ void calculator_menu(void)
             
         case 1:
             printf("\nEnter distance to convert");
-            scanf("%lf",&input1);
-            result = do_cm_m(input1);
-            printf("%lf",result);
+            do_cm_m(input1);
+            
+            __fpurge(stdin);
+            getchar();
             break;
 
         case 2:
             printf("\nEnter distance to convert");
-            scanf("%lf",&input1);
-            result = do_km_m(input1);
-            printf("%lf",result);
+            do_km_m(input1);
+            
+            __fpurge(stdin);
+            getchar();
             break;
 
         case 3:
             printf("\nEnter distance to convert");
-            scanf("%lf",&input1);
-            result = do_miles_km(input1);
-            printf("%lf",result);
+            do_miles_km(input1);
+            __fpurge(stdin);
+            getchar();
             break;
 
         case 4:
             printf("\nEnter distance to convert");
-            scanf("%lf",&input1);
-            result = do_miles_m(input1);
-            printf("%lf",result);
+            
+            do_miles_m(input1);
+            __fpurge(stdin);
+            getchar();
             break;
 
         case 5:
             printf("\nEnter distance to convert");
-            scanf("%lf",&input1);
-            result = do_km_miles(input1);
-            printf("%lf",result);
+
+            do_km_miles(input1);
+            __fpurge(stdin);
+            getchar();
             break;
     
             
